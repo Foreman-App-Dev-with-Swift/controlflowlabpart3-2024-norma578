@@ -98,11 +98,26 @@ print("***PROBLEM 3.0 : FITNESS APP")
 var steps = 400
 let stepGoal = 10000
 
+if (steps < stepGoal / 2) {// this is 10,000 divided by 2 can also just set it to 5,000
+    print ("You're almost halfway there")
+}
+else
+{
+    print("You're over halfway there")
+}
 
 print("\n")
 print("***PROBLEM 3.1 : FITNESS APP")
 // Now create a new, but similar, if-else-if statement that prints "Way to get a good start today!" if steps is less than a tenth of stepGoal, prints "You're almost halfway there!" if steps is less than half of stepGoal, and prints "You're over halfway there!" if steps is greater than half of stepGoal.
-
+if (steps < (1/10) * stepGoal) {
+print("way to get a good start today")
+}
+else if (steps < stepGoal / 2) {
+    print("you're halfway there")
+}
+else {
+    print("You're over halfway there")
+}
 
 
 //Once you complete the coding, test "steps" with various numbers to see if all the coding works. Then continue.
@@ -119,7 +134,9 @@ print("***PROBLEM 3.2 : DINNER TIME")
  Another friend brings up a restaurant she thinks will fit both of your criteria. This restaurant's attributes are represented by a few constants below. Write an if-else statement that will print "Let's go!" if the restaurant's attributes match the group's dietary requirements, and otherwise will print "Sorry, we'll have to think of somewhere else."
  HINT: Create three boolean constants of hasFish, hasPizza, & hasVegan that are true. Then write your if-else statements.
  */
-
+if
+    print("Let's go")
+    
 
 
 print("\n")
