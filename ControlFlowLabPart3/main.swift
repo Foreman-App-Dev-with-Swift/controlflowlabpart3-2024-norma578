@@ -134,19 +134,31 @@ print("***PROBLEM 3.2 : DINNER TIME")
  Another friend brings up a restaurant she thinks will fit both of your criteria. This restaurant's attributes are represented by a few constants below. Write an if-else statement that will print "Let's go!" if the restaurant's attributes match the group's dietary requirements, and otherwise will print "Sorry, we'll have to think of somewhere else."
  HINT: Create three boolean constants of hasFish, hasPizza, & hasVegan that are true. Then write your if-else statements.
  */
-if
-    print("Let's go")
-    
-
+let hasFish = true
+let hasPizza = true
+let hasVegan = true
+if (hasFish || hasPizza && hasVegan){
+  print("lets go")
+}
+else {
+    print("lets keep looking")
+}
 
 print("\n")
 print("***PROBLEM 3.3 : COMBINING ALL LOGIC")
 // Imagine you're trying to decide whether or not to go on a walk. You decide that you'll go on a walk if it's not raining or if it's 82 degress or warmer and sunny out. Create a constant isNiceWeather that is equal to an expression that evaluates to a boolean indicating whether or not the weather is nice enough for you to go for a walk. Write an if statement that will print "I'm going for a walk!" if the weather is nice.
 //HINT: Declare two true Booleans - isRaining & isSunny. Then declare a variable - temp - that has the value of 90.Then declare the constant isNiceWeather which is given the value of the correct parameters of the previous three variables.
 //Double HINT: The conditional parens should begin with NOT isRaining.
-
-
-
+var isRaining = true
+var isSunny = true
+var temp = 90
+let isNiceWeather = (!isRaining && temp > 82 && isSunny)
+if (isNiceWeather) {
+    print("im going for a walk")
+}
+else {
+    print("im staying home and watching tv")
+}
 //Once you complete the coding, test and run the code with various boolean conditions in the variables to see if all the coding works. Change true into false, use different degrees, etc. Then continue.
 
 print("\n")
